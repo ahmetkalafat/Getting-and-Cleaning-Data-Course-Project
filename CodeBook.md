@@ -306,4 +306,4 @@ extractedData$Subject <- as.factor(extractedData$Subject)
 extractedData <- data.table(extractedData)
 tidyData <- aggregate(. ~Subject + Activity, extractedData, mean)
 tidyData <- tidyData[order(tidyData$Subject,tidyData$Activity),]
-write.table(tidyData, file = "Tidy.txt", row.names = FALSE)
+write.table(tidyData, file = "TidyData.txt", row.names = FALSE)
